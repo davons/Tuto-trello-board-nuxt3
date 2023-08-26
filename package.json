@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "nuxt3-trello-board",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -10,6 +10,12 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxtjs/tailwindcss": "^6.8.0",
     "nuxt": "^3.7.0"
+  },
+  "dependencies": {
+    "@vueuse/nuxt": "^10.4.0",
+    "nanoid": "^4.0.2",
+    "vuedraggable": "^4.1.0"
   }
 }
