@@ -3,6 +3,7 @@
   :title="task.createdAt.toLocaleDateString()"
   class="task bg-white p-2 mb-2 rounded shadow-sm max-w-[250px]"
 >
+<DragHandler class="text-sm mr-2"/>
     <span>
         {{ task.title }}
     </span>
@@ -15,5 +16,14 @@ defineProps<{task: Task}>()
 </script>
 
 <style>
-
+.sortable-drag .task {
+   transform: rotate(5deg);
+}
+.sortoble-ghost .task{
+   position: relative;
+}
+.sortoble-ghost .task::after{
+    content: "";
+    @apply absolute top-0 bottom-0 left-0 right-0 bg-slate-300 rounded;
+}
 </style>
