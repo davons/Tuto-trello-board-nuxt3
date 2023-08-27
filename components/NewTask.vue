@@ -30,9 +30,4 @@ function createTask(e: Event): void {
     }
     title.value = ""
 }
-
 </script>
-
-<style>
-
-</style>
